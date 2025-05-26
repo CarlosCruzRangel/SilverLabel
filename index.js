@@ -14,7 +14,7 @@ const client = new Client({
 });
 
 client.on('ready', () => {
-  console.log(`✅ ${client.user.tag} is online!`); //If DesAIgn Sensei WORKS on discord !!
+  console.log(`✅ ${client.user.tag} is online!`); //If Silver Label WORKS on discord !!
 });
 
 //Prefijo
