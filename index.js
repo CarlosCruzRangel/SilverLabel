@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const Discord = require('discord.js');
 require('dotenv').config();
 const adfunc = require('./aditionalfunction');
@@ -46,7 +46,7 @@ client.on('messageCreate', async (message) => {
 
   // Azcapotzalco
   if (message.content.startsWith(prefix + 'Azcapotzalco')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Hdx Circus bar')
       .setThumbnail('https://i.pinimg.com/736x/77/ee/09/77ee096013c83e489522377f18f92899.jpg') //Cambiar imagen
       .setDescription('La música como nunca la habías sentido, ')
@@ -72,7 +72,7 @@ client.on('messageCreate', async (message) => {
 
   // Benito Juárez
   if (message.content.startsWith(prefix + 'Benito Juárez')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Presley Club CDMX')
       .setThumbnail(
         'https://scontent.fmex28-1.fna.fbcdn.net/v/t31.18172-8/24130533_2232068153497877_3955567318350904271_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=U5CamuU-K48AX-n1taE&_nc_ht=scontent.fmex28-1.fna&oh=00_AT-E0YTQjuCtDCzMayFu3VEF6uBHrsxBD3L8VMixA1Awzg&oe=62B192F4'
@@ -105,10 +105,10 @@ client.on('messageCreate', async (message) => {
 
   // Coyoacán(demian)
   if (message.content.startsWith(prefix + 'Coyoacán')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Asha Bar')
       .setThumbnail('https://asha-bar.com/archivo/img-logo/80x80/ed2b538709_ww.png')
-      .setDescription('')
+      .setDescription('¡Te recomendamos este lugar para una gran noche en Coyoacán!')
       .setColor(0x3b83bd)
       .addField(
         'Ubicacion',
@@ -135,10 +135,10 @@ client.on('messageCreate', async (message) => {
 
   //cuauhtemoc
   if (message.content.startsWith(prefix + 'Cuauhtémoc')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Main Room')
       .setThumbnail('https://images.adsttc.com/media/images/56cd/c4dd/e58e/cefa/9100/03e3/large_jpg/12-Main_Room_copy.jpg?1456325844')
-      .setDescription('')
+      .setDescription('Este es de lo mas exclusivo de la Roma paps')
       .setColor(0xfbb84d)
       .addField('Ubicacion', '[Av Oaxaca 90, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX](https://goo.gl/maps/p7HHJR151NVGU1ym6)')
       .addField('Cover:', '$300.00 MXN', true)
@@ -167,7 +167,7 @@ client.on('messageCreate', async (message) => {
 
   // Cuajimalpa de Morelos(Demian)
   if (message.content.startsWith(prefix + 'Cuajimalpa')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('SENS')
       .setThumbnail('https://lh3.googleusercontent.com/p/AF1QipN4AOH8uVhuvoFXZJ1x2vQA_7BrqwUblNJf5f6o=s1600-w400')
       .setDescription(
@@ -200,7 +200,7 @@ client.on('messageCreate', async (message) => {
   }
   // Gustavo A. Madero(Top)
   if (message.content.startsWith(prefix + 'Gustavo A. Madero')) {
-    const embed = new Discord.MessageEmbed().setTitle('Sin info nene');
+    const embed = new EmbedBuilder().setTitle('Sin info nene');
     message.reply({
       embeds: [embed],
       content: 'No hay nada bueno en ese rumbo',
@@ -209,7 +209,7 @@ client.on('messageCreate', async (message) => {
   }
   // Iztacalco(top)
   if (message.content.startsWith(prefix + 'Iztacalco')) {
-    const embed = new Discord.MessageEmbed().setTitle('Sin info nene');
+    const embed = new EmbedBuilder().setTitle('Sin info nene');
     message.reply({
       embeds: [embed],
       content: 'Ahi solo hay mercados mirrey pero te mando un uber para que te vengas a mi penhouse',
@@ -219,7 +219,7 @@ client.on('messageCreate', async (message) => {
 
   // Iztapalapa(top)
   if (message.content.startsWith(prefix + 'Iztapalapa')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('La Ingrata Bar Club')
       .setThumbnail(
         'https://scontent.fmex28-1.fna.fbcdn.net/v/t1.6435-9/87318642_203077301060289_8709574462263001088_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zz8EQnryTUQAX8g-dpV&_nc_ht=scontent.fmex28-1.fna&oh=00_AT90cVRMg6fQsPYctRXME0B285SPFisODEWkz3CT2lqWfA&oe=62B50727'
@@ -258,7 +258,7 @@ client.on('messageCreate', async (message) => {
 
   // Magdalena Contreras
   if (message.content.startsWith(prefix + 'Magdalena Contreras')) {
-    const embed = new Discord.MessageEmbed().setTitle('Sin info nene');
+    const embed =new EmbedBuilder().setTitle('Sin info nene');
     message.reply({
       embeds: [embed],
       content:
@@ -270,7 +270,7 @@ client.on('messageCreate', async (message) => {
 
   // Miguel Hidalgo
   if (message.content.startsWith(prefix + 'Miguel Hidalgo')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new new EmbedBuilder()
       .setTitle('La Santa Masaryk Polanco')
       .setThumbnail('https://lasantamasaryk.com/archivo/img-logo/80x80/808e8906f4-logosanta.png')
       .setDescription(
@@ -300,7 +300,7 @@ client.on('messageCreate', async (message) => {
 
   // Milpa Alta
   if (message.content.startsWith(prefix + 'Milpa Alta')) {
-    const embed = new Discord.MessageEmbed().setTitle('Clausurado por meter buchones');
+    const embed = new EmbedBuilder().setTitle('Clausurado por meter buchones');
     message.reply({
       embeds: [embed],
       content: 'No te preocupes muñeco te pido uber y le caes a mi depa',
@@ -310,7 +310,7 @@ client.on('messageCreate', async (message) => {
 
   // Tláhuac
   if (message.content.startsWith(prefix + 'Tláhuac')) {
-    const embed = new Discord.MessageEmbed().setTitle('Aqui en tu pueblo no hay nada mi principe');
+    const embed = new EmbedBuilder().setTitle('Aqui en tu pueblo no hay nada mi principe');
     message.reply({
       embeds: [embed],
       content: 'No te preocupes rey te pido uber y le caes a mi depa',
@@ -320,7 +320,7 @@ client.on('messageCreate', async (message) => {
 
   // Tlalpan
   if (message.content.startsWith(prefix + 'Tlalpan')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('La Culpable Coapa')
       .setThumbnail('https://pbs.twimg.com/profile_images/662389437326753792/T9kOwA-W_400x400.jpg')
       .setDescription(
@@ -352,7 +352,7 @@ client.on('messageCreate', async (message) => {
 
   // Xochimilco
   if (message.content.startsWith(prefix + 'Xochimilco')) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Embarcadero Nuevo Nativitas Xochimilco')
       .setThumbnail('http://www.xochimilco.cdmx.gob.mx/wp-content/uploads//2021/11/Logo_Pagina_2021-uai-258x252.png')
       .setDescription(
