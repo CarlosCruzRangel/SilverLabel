@@ -66,7 +66,7 @@ module.exports = {
     }else if(intentName=='trago'){
       return adFunc.sugerirTrago();
     }else if(intentName=='desaprobacionTrago'){
-      return module.exports.respuestaApropiadaTrago();
+      return module.exports.respuestaApropiadaTrago(intent, userInput, contexto);
     }
     return '';
   },
@@ -77,6 +77,15 @@ module.exports = {
       return 'Aquí te va otro' + adFunc.contarConsejo();
     } else {
       return 'Aquí te va otro, espero que tengas éxito como lo hice en Eiza González' + adFunc.contarConsejo();
+    }
+  },
+
+  respuestaApropiadaTrago(intent,userInput,contexto){
+    //Función que modifica una respuesta para que su contenido sea el adecuado.
+    if(contexto=='TRAGO'){
+      return 'Ok, prueba con esto 🍸 ' + adFunc.sugerirTrago();
+    }else{
+      return 'A ver si este trago te convence 🍹 ' + adFunc.sugerirTrago();
     }
   },
 
