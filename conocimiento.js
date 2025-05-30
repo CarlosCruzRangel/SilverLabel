@@ -14,9 +14,9 @@ module.exports = {
       regex: ['(Quien eres)', '(Presentate|Presentacion)', '(Que eres?)', '(Que puedes hacer?)'],
       respuesta: [
         'Hola, soy el único bot que te lleva de fiesta y  te ayuda a ligarte a una niña bien.' +
-          '¿Que puedo hacer por ti príncipe?' +
-          'Tu pide, que por lobukis y dinero no paramos.' +
-          'Nos vamos de party a uno de los mejores antros de la ciudad o prefieres un consejo para ligarte una niña bien?',
+        '¿Que puedo hacer por ti príncipe?' +
+        'Tu pide, que por lobukis y dinero no paramos.' +
+        'Nos vamos de party a uno de los mejores antros de la ciudad o prefieres un consejo para ligarte una niña bien?',
       ],
     },
 
@@ -32,6 +32,19 @@ module.exports = {
 
       respuesta: ['Ahi te van papi...', 'Que bueno que los pediste por que pareces de insurgentes sur'],
     },
+
+    trago: {
+      intent: 'trago',
+      regex: ['(quiero|dame|sugiéreme|recomiéndame) (un|una)? (trago|bebida|drink|cocktail)', 'qué puedo tomar', 'una bebida para salir', 'una bebida rica'],
+      respuesta: ['Claro, aquí va una sugerencia papi.... 🍹'],
+    },
+
+    desaprobacionTrago: {
+      intent: 'desaprobacionTrago',
+      regex: ['otro trago', 'otra bebida', 'no me gusta ese', 'siguiente', 'algo más de beber', 'cambia de trago'],
+      respuesta: [''],
+    },
+
 
     desaprobacionConsejo: {
       intent: 'desaprobacionConsejo',
