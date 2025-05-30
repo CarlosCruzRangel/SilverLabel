@@ -42,6 +42,8 @@ module.exports = {
     } else if (intentName == 'outfit') {
       console.log('Contexto actual: OUTFIT');
       return 'OUTFIT';
+    }else if(intentName=='trago'){
+      return 'TRAGO'
     }
     console.log('Manteniendo contexto actual:', contexto);
     return contexto;
