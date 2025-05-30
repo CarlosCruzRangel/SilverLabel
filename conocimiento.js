@@ -4,8 +4,8 @@ module.exports = {
       intent: 'bienvenida',
       regex: ['Hola', 'Inicio'],
       respuesta: [
-        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos 💸. Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
-        'Hola, Nos vamos de party 🍾 o quieres un consejo para ligarte una niña bien? 💅🏻',
+        'Hola, ¿Que puedo hacer por ti príncipe? Tu pide, que por lo  bukis y dinero no paramos 💸. Nos vamos de party 🍾 . Quieres un consejo para ligarte una niña bien? 💅🏻 o quieres que te recomiende un cocktelito principe 🍹 ',
+        'Hola, Nos vamos de party 🍾 , quieres un consejo para ligarte una niña bien? 💅🏻 o quieres un cocktelito mi rey 🍹',
       ],
     },
 
