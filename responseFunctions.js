@@ -63,6 +63,10 @@ module.exports = {
       return module.exports.respuestaApropiadaOutfit(intent, userInput, contexto);
     } else if (intentName == 'outfit') {
       return adFunc.mostrarOutfit();
+    }else if(intentName=='trago'){
+      return adFunc.sugerirTrago();
+    }else if(intentName=='desaprobacionTrago'){
+      return module.exports.respuestaApropiadaTrago();
     }
     return '';
   },
